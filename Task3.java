@@ -30,11 +30,11 @@ class BankAccount{
         }
     }
 }
-class ATMInterface{
+class ATM{
     private  BankAccount account;
     private Scanner scanner;
 
-    public ATMInterface(BankAccount account){
+    public ATM(BankAccount account){
         this.account=account;
         this.scanner=new Scanner(System.in);
     }
@@ -95,7 +95,7 @@ class ATMInterface{
         System.out.println("Enter Your Four Digit PIN: ");
         int pin =sc.nextInt();
         BankAccount account=new BankAccount(30000.0);
-        ATMInterface atm=new ATMInterface(account);
+        ATM atm=new ATM(account);
         if(pin == 9359)
 {
         atm.run();
