@@ -13,6 +13,7 @@ class NumberGame {
     
 
         System.out.println("welcome to number game!!");
+        System.out.println("you have 10 attempts to guess the correct number!!");
 
         do {
             int targetedNumber = random.nextInt(maxlimit - minlimit + 1) + minlimit;
